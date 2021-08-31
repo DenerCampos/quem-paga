@@ -1,0 +1,21 @@
+{
+    "members": [
+        {
+            "name": "Dener Campos",
+            "data": "2021-01-01",
+            "active": true
+        },
+        {
+            "name": "Andre Nicodemos",
+            "data": "2021-01-01",
+            "active": true
+        },
+        {
+            "name": "Breno Campos",
+            "data": "2021-01-01",
+            "active": true
+        }
+    ],
+    "pay_day": 10,
+    "start_month": 0
+}
