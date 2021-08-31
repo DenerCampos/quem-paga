@@ -1,7 +1,7 @@
 import fs from 'fs'
 import path from 'path'
 
-
+const dbSource = 'src/database/data'
 const months = [
     'janeiro',
     'fevereiro',
@@ -38,28 +38,28 @@ const getDataFile = async (directory, file) => {
 }
 
 export async function getDataBase() {
-    let dataBaseContent = await getDataFile('src/database', 'database.json')
+    let dataBaseContent = await getDataFile(dbSource, 'database.json')
     dataBaseContent = await JSON.parse(dataBaseContent)
 
     return dataBaseContent
 }
 
 export async function getMembers() {
-    let members = await getDataFile('config', 'config.json')
+    let members = await getDataFile(dbSource, 'config.json')
     members = await JSON.parse(members).members
     
     return members
 }
 
 export async function getconfig() {
-    let payDay = await getDataFile('config', 'config.json')
+    let payDay = await getDataFile(dbSource, 'config.json')
     payDay = await JSON.parse(payDay).pay_day
     
     return payDay
 }
 
 export async function getWhoPays() {
-    const config = await getDataFile('config', 'config.json')
+    const config = await getDataFile(dbSource, 'config.json')
     const members = await JSON.parse(config).members
     const payDay = await JSON.parse(config).pay_day
     // const startMonth = await JSON.parse(config).start_month
