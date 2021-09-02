@@ -3,17 +3,20 @@
         {
             "name": "Dener Campos",
             "data": "2021-01-01",
-            "active": true
+            "active": true,
+            "atual": false
         },
         {
             "name": "Andre Nicodemos",
             "data": "2021-01-01",
-            "active": true
+            "active": true,
+            "atual": true
         },
         {
             "name": "Breno Campos",
             "data": "2021-01-01",
-            "active": true
+            "active": true,
+            "atual": false
         }
     ],
     "pay_day": 10,
