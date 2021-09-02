@@ -1,27 +1,38 @@
 [
     {
-        "name": "Dener Campos",
-        "data": "2021/08/21",
-        "payment": true
+        "member": {
+            "name": "Dener Campos",
+            "data": "2021/08/21"
+        },
+        "payment": true,
+        "month": "agosto",
+        "dueDate": 10
     },
     {
-        "name": "Breno Campos",
-        "data": "2021/09/21",
-        "payment": true
+        "member": {
+            "name": "Breno Campos",
+            "data": "2021/08/21"
+        },
+        "payment": true,
+        "month": "agosto",
+        "dueDate": 10
     },
     {
-        "name": "André Nicodemos",
-        "data": "2021/10/21",
-        "payment": false
+        "member": {
+            "name": "André Nicodemos",
+            "data": "2021/08/21"
+        },
+        "payment": true,
+        "month": "agosto",
+        "dueDate": 10
     },
     {
-        "name": "Breno Campos",
-        "data": "2021/11/21",
-        "payment": false
-    },
-    {
-        "name": "Dener Campos",
-        "data": "2021/12/21",
-        "payment": false
+        "member": {
+            "name": "Dener Campos",
+            "data": "2021/08/21"
+        },
+        "payment": true,
+        "month": "agosto",
+        "dueDate": 10
     }
 ]
