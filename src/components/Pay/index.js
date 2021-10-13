@@ -19,7 +19,7 @@ const useStyles = makeStyles({
             component="img"
             alt="Dark Souls"
             height="140"
-            image="/images/dark.jpg"
+            image="/images/netflix.jpg"
             title="Dark Souls"
           />
           <CardContent>
@@ -27,7 +27,7 @@ const useStyles = makeStyles({
               Parabéns  {pay.member.name} 
             </Typography>
             <Typography variant="body2" color="textSecondary" component="p">
-              Você irá pagar o mês de  {pay.month} . Lembrando que o vencimeto é dia:  {pay.dueDate} .
+              Você irá pagar o mês de  <strong>{pay.month} </strong>. Lembrando que o vencimeto é dia:  {pay.dueDate} .
               Ajuda nóis ai!
             </Typography>
           </CardContent>

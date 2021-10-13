@@ -1,0 +1,50 @@
+{
+    "service": [
+        {
+            "id": 1,
+            "name": "Netflix",
+            "frequency": 30
+        },
+        {
+            "id": 2,
+            "name": "PSN",
+            "frequency": 384
+        }
+    ],
+    "members": [
+        {
+            "name": "Dener Campos",
+            "data": "2021-01-01",
+            "active": true,
+            "atual": false,
+            "service":  {
+                "id": 1,
+                "name": "Netflix",
+                "frequency": 30
+            }
+        },
+        {
+            "name": "Andre Nicodemos",
+            "data": "2021-01-01",
+            "active": true,
+            "atual": true,
+            "service": [1]
+        },
+        {
+            "name": "Breno Campos",
+            "data": "2021-01-01",
+            "active": true,
+            "atual": false,
+            "service": [1]
+        },
+        {
+            "name": "Jonathan Campos",
+            "data": "2021-01-01",
+            "active": true,
+            "atual": false,
+            "service": [2]
+        }
+    ],
+    "pay_day": 10,
+    "start_month": 0
+}
