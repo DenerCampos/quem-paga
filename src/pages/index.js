@@ -1,9 +1,9 @@
 import { Container, Grid, Paper, Typography } from '@material-ui/core';
+import { makeStyles } from '@material-ui/core/styles'
+import Carousel from "react-material-ui-carousel"
 import Title from '../components/Title'
 import Pay from '../components/Pay'
 import Old from '../components/Old'
-import { makeStyles } from '@material-ui/core/styles'
-import { AutoRotatingCarousel, Slide } from "material-auto-rotating-carousel"
 
 // This function gets called at build time
 export async function getStaticProps() {
@@ -45,21 +45,32 @@ function Home({ pay }) {
               <Title></Title>
             </Grid>
 
-            <Grid container direction="row" justifyContent="center" alignItems="center" spacing={1}>
+            <Grid container direction="row" justifyContent="center" alignItems="center">
               <Grid item xs={12} md={6}>
-                <Pay>{pay}</Pay>
+                {/* <Pay>{pay}</Pay> */}
+                <Carousel animation="slide" interval="10000">
+                  <Pay>{pay}</Pay>
+                  <Pay>{pay}</Pay>
+                </Carousel>
               </Grid>
             </Grid>
 
             <hr className={classes.divisor}></hr>
 
-            <Grid container direction="row" justifyContent="center" alignItems="center" spacing={1}>
+            {/* <Grid container direction="row" justifyContent="center" alignItems="center" spacing={1}>
               <Grid item xs={12} md={6} >
                 <Typography>Mesês anteriores</Typography>
               </Grid>
+            </Grid> */}
+
+            <Grid container direction="row" justifyContent="center" alignItems="center" spacing={1}>
+              <Grid item xs={12} md={6} >
+                <Old>{pay}</Old>
+              </Grid>
             </Grid>
 
-            <Old>{pay}</Old>
+
+            {/* <Old>{pay}</Old> */}
 
         </Grid>
       </Container>
