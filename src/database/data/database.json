@@ -1,38 +1,50 @@
-[
-    {
-        "member": {
-            "name": "Dener Campos",
-            "data": "2021/08/21"
-        },
-        "payment": true,
-        "month": "agosto",
-        "dueDate": 10
+{
+    "config" : {
+        "pay_day": 10,
+        "start_month": 0,
+        "last_month": 0
     },
-    {
-        "member": {
+    "members": [
+        {
+            "name": "Dener Campos",
+            "data": "2021-01-01",
+            "last_month": true
+        },
+        {
+            "name": "Andre Nicodemos",
+            "data": "2021-01-01",
+            "last_month": false
+        },
+        {
             "name": "Breno Campos",
-            "data": "2021/08/21"
+            "data": "2021-01-01",
+            "last_month": false
+        }
+    ],
+    "payments": [
+        {
+            "member": "Dener Campos",
+            "payment": true,
+            "data_payment": "2021-01-01",
+            "month": 8
         },
-        "payment": true,
-        "month": "agosto",
-        "dueDate": 10
-    },
-    {
-        "member": {
-            "name": "André Nicodemos",
-            "data": "2021/08/21"
+        {
+            "member": "Andre Nicodemos",
+            "payment": true,
+            "data_payment": "2021-01-01",
+            "month": 9
         },
-        "payment": true,
-        "month": "agosto",
-        "dueDate": 10
-    },
-    {
-        "member": {
-            "name": "Dener Campos",
-            "data": "2021/08/21"
+        {
+            "member": "Breno Campos",
+            "payment": true,
+            "data_payment": "2021-01-01",
+            "month": 10
         },
-        "payment": true,
-        "month": "agosto",
-        "dueDate": 10
-    }
-]
+        {
+            "member": "Dener Campos",
+            "payment": false,
+            "data_payment": "2021-01-01",
+            "month": 11
+        }
+    ]
+}

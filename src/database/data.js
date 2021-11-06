@@ -28,7 +28,6 @@ const getDataFile = async (directory, file) => {
 
     try {
         dir = path.resolve('./' + directory)
-        // console.log(path.join(dir, file))
         fileContent = fs.readFileSync(path.join(dir, file), 'utf8')    
     } catch (error) {
         throw new DataException('Não foi possivel abrir o arquivo ' + path.join(dir, file))
